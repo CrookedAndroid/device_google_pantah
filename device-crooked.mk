@@ -83,6 +83,10 @@ PRODUCT_PACKAGES += \
     android.hardware.confirmationui@1.0.vendor:64 \
     libteeui_hal_support.vendor:64
 
+# For Google Camera
+PRODUCT_COPY_FILES += \
+    device/google/pantah/the_experiences.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/the_experiences.xml
+
 # HIDL
 PRODUCT_PACKAGES += \
     libhidltransport.vendor \
