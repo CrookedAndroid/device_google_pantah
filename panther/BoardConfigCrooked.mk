@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2019 The Android Open-Source Project
+# Copyright (C) 2022 The Crooked Android Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,14 +14,4 @@
 # limitations under the License.
 #
 
-PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/crooked_cheetah.mk \
-    $(LOCAL_DIR)/crooked_panther.mk
-
-COMMON_LUNCH_CHOICES := \
-    crooked_cheetah-eng \
-    crooked_cheetah-user \
-    crooked_cheetah-userdebug \
-    crooked_panther-eng \
-    crooked_panther-user \
-    crooked_panther-userdebug
+include device/google/pantah/BoardConfigCrooked.mk
