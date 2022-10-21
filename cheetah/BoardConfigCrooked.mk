@@ -17,5 +17,3 @@
 include device/google/pantah/BoardConfigCrooked.mk
 
 
-include vendor/google/cheetah/BoardConfigVendor.mk
-

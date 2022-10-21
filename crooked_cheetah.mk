@@ -36,6 +36,5 @@ BUILD_FINGERPRINT := google/cheetah/cheetah:13/TD1A.220804.031/9071314:user/rele
 
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
-$(call inherit-product, vendor/google/cheetah/cheetah-vendor.mk)
 $(call inherit-product-if-exists, vendor/gms/products/gms.mk)
 $(call inherit-product-if-exists, vendor/google/pixelparts/pixelparts.mk)
