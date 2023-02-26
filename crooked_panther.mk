@@ -3,7 +3,7 @@ TARGET_SCREEN_HEIGHT := 2280
 TARGET_SCREEN_WIDTH := 1080
 
 # Inherit some common crooked stuff.
-$(call inherit-product, device/google/pantah/aosp_cheetah.mk)
+$(call inherit-product, device/google/pantah/aosp_panther.mk)
 $(call inherit-product, device/google/pantah/device-crooked.mk)
 $(call inherit-product, device/google/gs201/crooked_common.mk)
 
@@ -23,6 +23,6 @@ PRODUCT_MANUFACTURER := Google
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=panther \
-    PRIVATE_BUILD_DESC="panther-user 13 TQ1A.221205.011 9244662 release-keys"
+    PRIVATE_BUILD_DESC="panther-user 13 TQ1A.230205.002 9471150 release-keys"
 
-BUILD_FINGERPRINT := $(PRODUCT_OVERRIDE_FINGEPRINT)
+BUILD_FINGERPRINT := google/panther/panther:13/TQ1A.230205.002/9471150:user/release-keys
