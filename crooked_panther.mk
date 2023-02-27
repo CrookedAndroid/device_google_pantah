@@ -3,13 +3,13 @@ TARGET_SCREEN_HEIGHT := 2280
 TARGET_SCREEN_WIDTH := 1080
 
 # Inherit some common crooked stuff.
-$(call inherit-product, device/google/pantah/aosp_panther.mk)
-$(call inherit-product, device/google/pantah/device-crooked.mk)
-$(call inherit-product, device/google/gs201/crooked_common.mk)
+$(call inherit-product, vendor/crooked/config/common.mk)
+$(call inherit-product, vendor/crooked/config/gsm.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/google/pantah/aosp_panther.mk)
 $(call inherit-product, device/google/pantah/device-crooked.mk)
+$(call inherit-product, device/google/gs201/crooked_common.mk)
 
 # Parts
 $(call inherit-product-if-exists, vendor/google/pixelparts/pixelparts.mk)
