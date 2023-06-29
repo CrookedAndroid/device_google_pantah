@@ -26,6 +26,9 @@ $(call inherit-product-if-exists, vendor/google_devices/pantah/proprietary/Wallp
 
 DEVICE_PACKAGE_OVERLAYS += device/google/pantah/cheetah/overlay
 
+PRODUCT_COPY_FILES += \
+        $(LOCAL_PATH)/product-permissions-stock.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/product-permissions-stock.xml
+
 include device/google/pantah/audio/cheetah/audio-tables.mk
 include device/google/gs201/device-shipping-common.mk
 include hardware/google/pixel/vibrator/cs40l26/device.mk
